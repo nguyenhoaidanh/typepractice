@@ -64,10 +64,10 @@ app.post('/login',function(req,res){
 			req.session.username=data.name;
 			console.log(req.files);
 			var fileUpload=req.files.image;
-			imgSrc='/image/'+req.files.image.name;
+			imgSrc='/upload/'+req.files.image.name;
 			console.log(imgSrc);
 			req.session.imgSrc=imgSrc;
-			fileUpload.mv( __dirname+'/public/image/'+fileUpload.name, function(err) {
+			fileUpload.mv( __dirname+'/upload/'+fileUpload.name, function(err) {
 				if (err)
 					console.log(err);
 				else  {console.log('File uploaded!');
