@@ -1,0 +1,1 @@
+web: node botTranslate.js 

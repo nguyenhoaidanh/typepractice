@@ -1,0 +1,58 @@
+.round-btn {border-radius: 50%;
+		background-color: lightblue;
+		color: black;
+		width: 35px;
+		height: 35px;
+		font-weight: bold;
+	}
+	*{
+		margin:0;
+		padding:0;
+	}
+	.header a
+	{
+		text-decoration: none;
+		padding: 5px 20px;
+		font-size: 20px;
+		font-style: italic;
+
+	}
+	#login,#top
+	{
+		float:right;
+	}
+	.modal-content
+	{	margin-left: 150px;
+		width: 300px;
+	}
+	.modal-content#rank ,.modal-content#confirm
+	{	margin-left: 0px;
+		width: 500px;
+	}
+#timer,#error
+{
+	color: red;
+	font-weight: bold;
+	font-size: 30px;
+}
+.musttype
+{
+	border: 2px solid black;
+	padding: 20px 0;
+}
+textarea
+{
+	width: 60%;
+	height: 150px;
+	padding: 10px;
+
+}
+li.list-group-item.active,li:hover
+{
+	background-color: lightblue;
+}
+a, a:hover
+{
+	text-decoration: none;
+
+}

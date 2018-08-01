@@ -1,0 +1,51 @@
+<% include head.ejs %>
+<body >
+		<% include nav.ejs %>
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-md-10 col-md-offset-1 content">
+						<h2>Tập gõ bảng chữ cái</h2>
+						<h3>Khi bạn bắt đầu gõ kí tự đầu tiên. Bộ đếm thời gian mới bắt đầu hoạt động.</h3>
+						<div ><span style="font-size: 20px;">Thời gian gõ:</span> <span  id="timer">00:00:00</span>
+						</div>
+						
+						<div ><span style="font-size: 20px;">Số lỗi:</span> <span  id="error">0</span>
+						</div>
+
+						<span style="font-size: 20px;">Nội dung cần gõ:</span> 
+						<div class="musttype text-center" >
+							
+						<script> 
+							for(var i=65;i<=90;i++)
+							{	var id=String.fromCharCode(i);
+								document.write('<button id='+id+' class="round-btn">'+id+'</button>');
+							}
+						</script>
+
+
+						</div>
+						
+						<br>
+						<h3>Your type:</h3>
+						
+						<textarea id="your"></textarea>
+
+
+				</div>
+			</div>
+		</div>
+		
+
+		<script>
+			
+		
+		</script>
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="/js/common.js"></script>
+		
+</body>
+
+</html>
