@@ -5,12 +5,13 @@ var session=require('express-session');
 var bodyParser=require('body-parser');
 app.use(fileUpload());
 var fs = require('fs');
+var path = require('path');
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('views', __dirname + '/view');
 app.set('view engine','ejs');
 
 app.use(express.static('public'));
-app.use('/upload',express.static('upload'));
+app.use('/upload',express.static(__dirname + '/upload'));
 
 app.use(session({
     secret: 'axxxxxxxxaaaaa',
