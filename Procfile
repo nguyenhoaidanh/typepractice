@@ -1,1 +1,1 @@
-web: node botTranslate.js 
+web: node server.js 
