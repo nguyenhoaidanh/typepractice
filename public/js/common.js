@@ -198,7 +198,7 @@ $(function(){
 						$(id).css('background-color', 'orange');
 						
 						if(cur==90)
-						{	
+						{	clearInterval(time);
 							if($('#username').html()=='Login')
 							{	
 								$('#modal-confirm').modal('show');
@@ -206,14 +206,14 @@ $(function(){
 									$('#modal-confirm').modal('hide');
 									writeFile($('#NAME').val(),rsT,rsE);
 									alert('Đã lưu điểm của bạn. Hãy kiểm tra xem bạn có trong Top 10 không nhé. ');
-									clearInterval(time);
+									
 								});
 							}
 							else
 							{
 								writeFile($('#username').html(),rsT,rsE);
 								alert('Đã lưu điểm của bạn. Hãy kiểm tra xem bạn có trong Top 10 không nhé. ');
-								clearInterval(time);
+								
 							}
 						}
 						cur++;

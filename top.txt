@@ -1,0 +1,2 @@
+{"user":"nguyenhoaidanh","time":"00:00:08","error":"0","imgSrc":"/image/ava.png"}
+{"user":"nguyenhoaidanh","time":"00:00:08","error":"6","imgSrc":"/upload/16195037_1737058346611230_6686822142559904475_n.jpg"}
