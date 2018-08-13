@@ -79,6 +79,10 @@ app.post('/login',function(req,res){
 	}
 });
 
+var http = require("http");
+setInterval(function() {
+    http.get("http://typepractice.herokuapp.com/");
+}, 300000*5); // every 25 minutes
 
 app.set('port', process.env.PORT || 8080);
 app.listen(process.env.PORT || 8080);
